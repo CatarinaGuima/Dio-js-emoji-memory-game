@@ -11,14 +11,15 @@ body {
 
 .container {
   width: 800px;
+  height: 100vh;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 30px;
-  background-color: #ec38bc;
-  padding: 40px 60px;
+  background-color: #c01b83;
+  padding: 40px;
 }
 
 h2 {
@@ -29,13 +30,12 @@ h2 {
 }
 
 .reset {
-  margin-top: 2rem;
   padding: 15px 20px;
   width: 100%;
   color: #fff;
-
   border: none;
   font-size: 1.5em;
+  font-weight: 800;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   cursor: pointer;
@@ -45,6 +45,8 @@ h2 {
       #7303c0 30%,
       #ec38bc 70%,
       #fdeff9 100%);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
 }
 
 .reset:focus {
@@ -52,10 +54,17 @@ h2 {
   background-color: #262809;
 }
 
+.reset:hover {
+  opacity: 0.8;
+  transition-duration: 0.2s;
+}
+
 .game {
   width: 700px;
-  height: 500px;
+  height: 600px;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
   transform-style: preserve-3d;
@@ -69,26 +78,29 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #fff;
-
+  background-color: #ffffff;
+  border-radius: 5%;
   font-size: 3em;
-  transform: rotateY(180deg);
+  transform: rotateY(0deg); 
   transition: 0.25s;
 }
 
+/* verso do card */
 .item::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: #404040;
-  /* opacity: 0.85; */
+  background: #ffffff url("../assets/images/disney-princess.png") center/contain no-repeat;
+  border-radius: 5%;
   transition: 0.25s;
   transform: rotateY(0deg);
   backface-visibility: hidden;
+  cursor: pointer;
 }
 
+/* quando abre o card, vira pra mostrar a frente */
 .item.boxOpen {
-  transform: rotateY(0deg);
+  transform: rotateY(180deg);
 }
 
 .boxOpen::after,
