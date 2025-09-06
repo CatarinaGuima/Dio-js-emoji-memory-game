@@ -1,7 +1,5 @@
 # 🃏✨ Jogo da Memória - Princesas Disney
 
-<img src="./assets/images/bg.jpg" alt="background do jogo" width="100%" />
-
 ## 📌 Sobre o Projeto
 Este é um **jogo da memória** desenvolvido com **HTML, CSS e JavaScript**, utilizando imagens das princesas da Disney 👑.  
 O objetivo é combinar os pares de cartas virando-as até completar o tabuleiro.  
@@ -33,7 +31,8 @@ Com animações suaves e um visual mágico, o projeto foi pensado para ser diver
 ---
 
 ## 📸 Demonstração
-➡️ *(adicione aqui um print ou gif do jogo rodando)*  
+
+➡️ <img width="907" height="812" alt="image" src="https://github.com/user-attachments/assets/24343263-507a-4ae0-b917-b789e4f4e7cc" />
 
 ---
 
