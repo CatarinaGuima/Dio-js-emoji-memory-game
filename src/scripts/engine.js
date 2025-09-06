@@ -1,21 +1,36 @@
 const emojis = [
-  "🐱",
-  "🐱",
-  "🦝",
-  "🦝",
-  "🦊",
-  "🦊",
-  "🐶",
-  "🐶",
-  "🐵",
-  "🐵",
-  "🦁",
-  "🦁",
-  "🐯",
-  "🐯",
-  "🐮",
-  "🐮",
+  "./src/assets/images/anna.jpg",
+  "./src/assets/images/anna.jpg",
+  "./src/assets/images/Ariel.jpg",
+  "./src/assets/images/Ariel.jpg",
+  "./src/assets/images/Aurora.jpg",
+  "./src/assets/images/Aurora.jpg",
+  "./src/assets/images/Belle.jpg",
+  "./src/assets/images/Belle.jpg",
+  "./src/assets/images/Cinderella.jpg",
+  "./src/assets/images/Cinderella.jpg",
+  "./src/assets/images/Elsa.jpg",
+  "./src/assets/images/Elsa.jpg",
+  "./src/assets/images/Jasmine.jpg",
+  "./src/assets/images/Jasmine.jpg",
+  "./src/assets/images/Merida.jpg",
+  "./src/assets/images/Merida.jpg",
+  "./src/assets/images/Moana.jpg",
+  "./src/assets/images/Moana.jpg",
+  "./src/assets/images/Mulan.jpg",
+  "./src/assets/images/Mulan.jpg",
+  "./src/assets/images/Pocahontas.jpg",
+  "./src/assets/images/Pocahontas.jpg",
+  "./src/assets/images/Rapunzel.jpg",
+  "./src/assets/images/Rapunzel.jpg",
+  "./src/assets/images/SnowWhite.jpg",
+  "./src/assets/images/SnowWhite.jpg",
+  "./src/assets/images/Tiana.jpg",
+  "./src/assets/images/Tiana.jpg",
+  "./src/assets/images/Alice.jpg",
+  "./src/assets/images/Alice.jpg",
 ];
+
 let openCards = [];
 
 let shuffleEmojis = emojis.sort(() => (Math.random() > 0.5 ? 2 : -1));
@@ -23,10 +38,20 @@ let shuffleEmojis = emojis.sort(() => (Math.random() > 0.5 ? 2 : -1));
 for (let i = 0; i < emojis.length; i++) {
   let box = document.createElement("div");
   box.className = "item";
-  box.innerHTML = shuffleEmojis[i];
+
+  // cria a imagem
+  let img = document.createElement("img");
+  img.src = shuffleEmojis[i];
+  img.alt = "Carta do jogo da memória";
+  img.width = "95";
+
+  // insere a imagem dentro da div
+  box.appendChild(img);
+
   box.onclick = handleClick;
   document.querySelector(".game").appendChild(box);
 }
+
 
 function handleClick() {
   if (openCards.length < 2) {
