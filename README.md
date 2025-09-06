@@ -1,4 +1,4 @@
-# 🃏✨ Jogo da Memória - Princesas Disney
+# ✨ Jogo da Memória - Princesas Disney
 
 ## 📌 Sobre o Projeto
 Este é um **jogo da memória** desenvolvido com **HTML, CSS e JavaScript**, utilizando imagens das princesas da Disney 👑.  
@@ -37,8 +37,4 @@ Com animações suaves e um visual mágico, o projeto foi pensado para ser diver
 ---
 
 ## ⚡ Como Executar
-Clone este repositório e abra o arquivo `index.html` no navegador:
-
-```bash
-git clone https://github.com/seu-usuario/memory-game-princesas.git
-cd memory-game-princesas
+[Jogue aqui]()
