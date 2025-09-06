@@ -37,4 +37,4 @@ Com animações suaves e um visual mágico, o projeto foi pensado para ser diver
 ---
 
 ## ⚡ Como Executar
-[Jogue aqui]()
+[Jogue aqui](https://catarinaguima.github.io/Dio-js-emoji-memory-game/)
